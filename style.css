@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+  /* background-color: black; */
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navlist{
+   display: flex;
+}
+
+.navlist li{
+  list-style: none;
+  margin: 10px 10px;
+}
+
+.navlist li a{
+text-decoration: none;
+color: white;
+padding: 12px 20px;
+font-size: 20px;
+
+}
+
+.navlist li a:hover{
+    color: cyan;
+    font-size: 18px;
+    transition: all 0.5s ease-out;
+    
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(./gym2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.home{
+    height: 95vh;
+}
+
+.bigtext{
+    font-size: 56px;
+    color: pink;
+    
+}
+
+.smalltext{
+
+    font-size: 24px;
+    margin-left: 167px;
+    padding: 13px 0px;
+    color: palegoldenrod;
+}
+
+.box{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 77%;
+    /* margin: auto; */
+    margin-left: 11%;
+}
+
+
+.serviceheader{
+   display: flex;
+   justify-content: center;
+   margin: 10px 0px;
+   font-size: 35px;
+}
+
+
+.firstbox{
+    display: flex;
+    align-items: center;
+    margin: 27px 0px;
+}
+
+.left h2{
+    margin: 5px 0px;
+}
+
+.left p{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.right img{
+    border-radius: 61px;
+}
+
+.right{
+    padding: 0px 5px;
+}
+
+.firstbox-center{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 27px 0px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.contactheader{
+
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+
+}
+
+.contact{
+    height: 700px;
+    background: #daefef;
+}
+
+.form-input{
+    margin: 7px 0px;
+    padding: 13px 22px;
+    border-radius: 11px;
+    font-weight: bold;
+}
+
+.btn{
+    margin: 7px 0px;
+    padding: 13px 22px;
+    border-radius: 11px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 11px;
+
+
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-weight: bold;
+}
+
+.about{
+  background: rgba(0, 0, 0, 0.7) url(./bg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100vh;
+}
+
+.text{
+    border: 2px solid gray;
+    color: silver;
+    margin: -2px 139px;
+    padding: 37px 90px;
+    border-radius: 48px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info{
+    padding: 37px 30px;
+}
+
+
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+  
+
+}
+
+.img-gallery img{
+    cursor: pointer;
+}
+
+.fullimg{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullimg span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px ){
+
+    .box{
+        margin-left: 5%;
+        width: 91%;
+    }
+     
+    .bigtext {
+        font-size: 27px;
+        color: pink;
+    }
+
+    .smalltext {
+        font-size: 16px;
+        margin-left: 78px;
+        padding: 10px 0px;
+        color: palegoldenrod;
+    }
+
+    .navlist li{
+        margin: 10px -4px;
+    }
+    .home{
+        height: 70vh;
+    }
+    .navlist li a {
+        text-decoration: none;
+        color: white;
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+    .navlist li a:hover{
+        font-size: 10px;
+
+    }
+
+    .firstbox{
+        flex-direction: column-reverse;
+    }
+
+    .firstbox-center{
+        flex-direction: column-reverse;
+    }
+    .left h2{
+        display: flex;
+        justify-content: center;
+    }
+    .left p{
+        font-size: 15px;
+    }
+
+    .text {
+        border: 2px solid gray;
+        color: silver;
+        margin: 0px 0px;
+        padding: 4px 12px;
+        border-radius: 11px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+    }
+}

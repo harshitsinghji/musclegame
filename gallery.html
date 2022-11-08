@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Hustle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <li><a href="/musclegame/">HOME</a></li>
+            <li><a href="/musclegame/about.html">ABOUT US</a></li>
+            <li><a href="/musclegame/gallery.html">GALLERY</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    
+         <div class="fullimg" id="fullimgbox">
+            <img src="gym1.jpg" id="fullimg" alt="" height="400px" width="500px">
+            <span onclick="closefullimg()">X</span>
+         </div>
+     
+        <div class="img-gallery">
+            <img src="gym1.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym2.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym3.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym4.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym5.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym6.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym7.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="gym8.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            <img src="bg.jpg" alt="" height="200px" width="300px" onclick="openfullimg(this.src)">
+            
+        </div>
+      
+
+        <script>
+            let fullimgbox= document.getElementById('fullimgbox')
+            let fullimg= document.getElementById('fullimg')
+
+            function openfullimg(pic){
+                fullimgbox.style.display = "flex"
+                fullimg.src = pic;
+            }
+
+            function closefullimg(){
+                fullimgbox.style.display = "none"
+            }
+               
+
+        </script>
+</body>
+</html>
